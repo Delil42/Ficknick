@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wichtige Nachricht</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .box {
+      padding: 40px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      background: #ff3333;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff5555;
+    }
+
+    #message {
+      display: none;
+      font-size: 50px;
+      font-weight: bold;
+      color: #ff3333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="start">
+    <h1>⚠️ Wichtige Nachricht</h1>
+    <p>Bitte hier klicken.</p>
+    <button onclick="showMessage()">Klick mich</button>
+  </div>
+
+  <div id="message">
+    NICK IST EIN YARAK 😂
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("start").style.display = "none";
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
